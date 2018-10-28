@@ -91,4 +91,12 @@ class TicTacToe
     won? || full? || draw?
   end
 
+  def winner
+    if won?
+      return @board[won?[0]]
+    else
+      return nil
+    end
+  end
+
 end
